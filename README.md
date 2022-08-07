@@ -1,2 +1,2 @@
-# playcover-bot
-Roeegh's Waifu
+# Puck
+an Artificial Spirit
