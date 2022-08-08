@@ -1,4 +1,4 @@
-module.exports = class HelpCommand extends require('../base') {
+module.exports = class help extends require('../base') {
     constructor(client) {
         super(client, {
             name: 'help', 
