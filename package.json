@@ -4,7 +4,8 @@
     "description": "an Artificial Spirit",
     "main": "puck.js",
     "scripts": {
-        "start": "node puck.js"
+        "start": "node puck.js",
+        "dev": "nodemon puck.js"
     },
     "repository": {
         "type": "git",
@@ -21,5 +22,8 @@
         "discord.js": "^13.9.2",
         "dotenv": "^10.0.0",
         "mongodb": "^4.1.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.19"
     }
 }
