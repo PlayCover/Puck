@@ -1,0 +1,25 @@
+{
+    "name": "puck",
+    "version": "1.0.0",
+    "description": "an Artificial Spirit",
+    "main": "puck.js",
+    "scripts": {
+        "start": "node puck.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/PlayCover/Puck.git"
+    },
+    "keywords": [
+        "PlayCover",
+        "Puck"
+    ],
+    "author": "Roeegh",
+    "license": "GPL-3.0",
+    "dependencies": {
+        "colors": "^1.4.0",
+        "discord.js": "^13.9.2",
+        "dotenv": "^10.0.0",
+        "mongodb": "^4.1.0"
+    }
+}
