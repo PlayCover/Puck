@@ -4,7 +4,6 @@ require('./resources/src').required();
 const { Client, Collection, Intents: { FLAGS } } = require('discord.js'),
       { MongoClient } = require('mongodb');
 
-
 class Puck extends Client {
     constructor() {
         super({

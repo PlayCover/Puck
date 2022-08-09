@@ -4,7 +4,12 @@ module.exports = class nvram extends require('../base') {
             name: 'nvram', 
             description: 'Setup Boot Arguments',
             options: [
-                { name: 'user', description: 'User to ping in reply', type: 'USER', required: false }
+                { 
+                    name: 'user',
+                    description: 'User to ping in reply',
+                    type: 'USER',
+                    required: false
+                }
             ]
         })
     }
