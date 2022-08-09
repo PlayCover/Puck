@@ -19,27 +19,6 @@ module.exports = class keymap extends require('../base') {
             name: 'keymap', 
             description: 'Keymapping FAQ and premade keymaps',
             options
-            // options: [
-            //     {
-            //         name: 'info',
-            //         description: 'Information about the keymapping system',
-            //         type: 'SUB_COMMAND',
-            //         options: [
-            //             { 
-            //                 name: 'user',
-            //                 description: 'User to ping in reply',
-            //                 type: 'USER',
-            //                 required: false
-            //             }
-            //         ]
-            //     },
-            //     { 
-            //         name: 'list', 
-            //         description: 'List of premade keymaps by the community', 
-            //         type: 'SUB_COMMAND_GROUP', 
-            //         options
-            //     }
-            // ]
         })
     }
 
