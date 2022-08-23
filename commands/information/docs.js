@@ -1,4 +1,3 @@
-
 module.exports = class docs extends require('../base') {
     constructor(client) {
         super(client, {
@@ -20,12 +19,9 @@ module.exports = class docs extends require('../base') {
             content: user ? user.toString() : null,
             embeds: [
                 this.client.src.embed()
-                    .setTitle('Read the Documentation:')
+                    .setTitle('Click here to open PlayBook')
                     .setURL('https://docs.playcover.io/')
                     .setAuthor({ name: 'PlayCover Documentation'})
-                    .setDescription(`
-                        [] - https://docs.playcover.io/
-                    `)
                     .setThumbnail('https://media.discordapp.net/attachments/918283668659793950/1010696286070124544/final_00000.png')
             ],
             ephemeral: user ? false : true
