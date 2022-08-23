@@ -20,7 +20,7 @@ module.exports = class docs extends require('../base') {
             content: user ? user.toString() : null,
             embeds: [
                 this.client.src.embed()
-                    .setTitle('Here\'s the link to the Documentation:')
+                    .setTitle('Read the Documentation:')
                     .setURL('https://docs.playcover.io/')
                     .setAuthor({ name: 'PlayCover Documentation'})
                     .setDescription(`
