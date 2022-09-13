@@ -1,30 +1,19 @@
-module.exports = class nvram extends require('../base') {
-    constructor(client) {
-        super(client, {
-            name: 'nvram', 
-            description: 'Setup Boot Arguments',
-            options: [
-                { 
-                    name: 'user',
-                    description: 'User to ping in reply',
-                    type: 'USER',
-                    required: false
-                }
-            ]
-        })
-    }
+const { EmbedBuilder, SlashCommandBuilder } = require('discord.js');
 
-    /**
-     * @param {import('discord.js').CommandInteraction} interaction 
-     */
-    async run(interaction) {
+module.exports = {
+	data: new SlashCommandBuilder()
+		.setName('nvram')
+		.setDescription('Setup Boot Arguments')
+        .addUserOption(option => option.setName('user').setDescription('User to ping in reply')),
+
+	async execute(interaction) {
         let user = interaction.options.getUser('user');
         
         return interaction.reply({
             content: user ? `${user.toString()}, ${interaction.member.toString()} wanted you to see this command` : null,
             allowedMentions: user,
             embeds: [
-                this.client.src.embed()
+                new EmbedBuilder()
                     .setAuthor({ name: `Requested by: ${interaction.member.nickname}`, iconURL: interaction.user.avatarURL() })
                     .setTitle('How to input the recommended nvram boot-args:')
                     .setDescription(`   
@@ -37,8 +26,9 @@ module.exports = class nvram extends require('../base') {
                         ➤ Restart your mac
                         ➤ **Enjoy!**
                     `)
+                    .setColor('Random')
             ],
             ephemeral: user ? false : true
-        }).catch(error => console.error(`[ERROR]: ${error}`.red));
+        }).catch(error => console.error(`[ERROR]: ${error}`));
     }
-}
+};
