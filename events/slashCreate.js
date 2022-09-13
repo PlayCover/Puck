@@ -1,5 +1,5 @@
 module.exports = {
-	name: "interactionCreate",
+	name: 'interactionCreate',
 	async execute(interaction) {
 		if (!interaction.isChatInputCommand()) return;
 
@@ -11,7 +11,7 @@ module.exports = {
 		} catch (err) {
 			console.error(err);
 			await interaction.reply({
-                content: "There was an issue while executing that command!", 
+                content: 'There was an issue while executing that command!', 
                 ephemeral: true
             });
 		}
