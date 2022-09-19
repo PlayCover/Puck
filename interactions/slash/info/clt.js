@@ -2,7 +2,7 @@ const { EmbedBuilder, SlashCommandBuilder } = require('discord.js');
 
 module.exports = {
 	data: new SlashCommandBuilder()
-		.setName('ctl')
+		.setName('clt')
 		.setDescription('How to install Xcode Command Line Tools')
         .addUserOption(option => option.setName('user').setDescription('User to ping in reply')),
 
@@ -11,7 +11,7 @@ module.exports = {
         
         return interaction.reply({
             content: user ? `${user.toString()}, ${interaction.member.toString()} wanted you to see this command` : null,
-            allowedMentions: user,
+            allowedMentions: { users: [user ? user.id : null] },
             embeds: [
                 new EmbedBuilder()
                     .setAuthor({ name: `Requested by: ${interaction.member.nickname}`, iconURL: interaction.user.avatarURL() })
