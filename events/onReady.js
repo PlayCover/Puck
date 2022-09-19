@@ -1,3 +1,5 @@
+const { ActivityType } = require('discord.js');
+
 module.exports = {
 	name: 'ready',
 	once: true,
@@ -16,15 +18,15 @@ module.exports = {
 function status(client) {
     setInterval(() => {
         let key = [
-            { type: 'WATCHING', data: 'people not read FAQ' },
-            { type: 'WATCHING', data: 'devs push back releases' },
-            { type: 'PLAYING', data: 'PlayCover' },
-            { type: 'PLAYING', data: 'with Emilia 🌸' },
-            { type: 'PLAYING', data: 'with depression' },
+            { type: ActivityType.Watching, data: 'people not read FAQ' },
+            { type: ActivityType.Watching, data: 'devs push back releases' },
+            { type: ActivityType.Playing, data: 'PlayCover' },
+            { type: ActivityType.Playing, data: 'with Emilia 🌸' },
+            { type: ActivityType.Playing, data: 'with depression' },
         ];
         let rand = key[Math.floor(Math.random() * key.length)];
 
-        client.user.setPresence({ status: 'online', activities: [ { name: rand.data, type: rand.type } ] });
+        client.user.setPresence({ activities: [ { name: rand.data, type: rand.type } ] });
     }, 5 * 60000);
-    setTimeout(() => client.user.setPresence({ status: 'online', activities: [ { name: '/help', type: 'WATCHING' } ] }), 60000);
+    setTimeout(() => client.user.setPresence({ activities: [ { name: '/help', type: ActivityType.Watching } ] }), 60000);
 };

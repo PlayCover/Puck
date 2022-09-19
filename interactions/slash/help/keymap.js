@@ -17,7 +17,7 @@ module.exports = {
         if (game) {
             return interaction.reply({
                 content: user ? `${user.toString()}, ${interaction.member.toString()} wanted you to see this command` : null,
-                allowedMentions: user,
+                allowedMentions: { users: [user ? user.id : null] },
                 embeds: [
                     new EmbedBuilder()
                     .setTitle(`${game} Keymap`)
@@ -28,7 +28,7 @@ module.exports = {
         } else {
             return interaction.reply({
                 content: user ? `${user.toString()}, ${interaction.member.toString()} wanted you to see this command` : null,
-                allowedMentions: user,
+                allowedMentions: { users: [user ? user.id : null] },
                 embeds: [
                     new EmbedBuilder()
                     .setTitle('Keymapping FAQ')
