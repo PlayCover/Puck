@@ -2,31 +2,31 @@
     {
         "tag": "genshin",
         "name": "Genshin Impact",
-        "url": "bit.ly/genshin_keymapping"
+        "url": "bit.ly/genshin_keymapping",
         "bundle_identifier": "com.miHoYo.GenshinImpact"
     },
     {
         "tag": "honkai",
         "name": "Honkai Impact 3rd",
-        "url": "bit.ly/honkai_keymapping"
+        "url": "bit.ly/honkai_keymapping",
         "bundle_identifier": "com.miHoYo.bh3global"
     },
     {
         "tag": "diablo",
         "name": "Diablo Immortal",
-        "url": "bit.ly/diablo_keymapping"
+        "url": "bit.ly/diablo_keymapping",
         "bundle_identifier": "com.blizzard.diablo.immortal"
     },
     {
         "tag": "wildrift",
         "name": "League of Legends: Wild Rift",
-        "url": "bit.ly/wildrift_keymapping"
+        "url": "bit.ly/wildrift_keymapping",
         "bundle_identifier": "com.riotgames.league.wildrift"
     },
     {
         "tag": "grayreven",
         "name": "Punishing: Gray Raven",
-        "url": "bit.ly/grayreven_keymapping"
+        "url": "bit.ly/grayreven_keymapping",
         "bundle_identifier": "com.kurogame.punishing.grayraven.en"
     }
 ]
