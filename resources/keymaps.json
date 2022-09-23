@@ -2,31 +2,36 @@
     {
         "tag": "genshin",
         "name": "Genshin Impact",
-        "url": "bit.ly/genshin_keymapping",
+        "url": "https://www.bit.ly/genshin_keymapping",
+        "direct_URL": "https://cdn.discordapp.com/attachments/922068254569160745/922118663937593374/com.miHoYo.GenshinImpact.playmap",
         "bundle_identifier": "com.miHoYo.GenshinImpact"
     },
     {
         "tag": "honkai",
         "name": "Honkai Impact 3rd",
-        "url": "bit.ly/honkai_keymapping",
+        "url": "https://www.bit.ly/honkai_keymapping",
+        "direct_URL": "https://cdn.discordapp.com/attachments/922068254569160745/983444931433603113/com.miHoYo.bh3oversea.playmap",
         "bundle_identifier": "com.miHoYo.bh3global"
     },
     {
         "tag": "diablo",
         "name": "Diablo Immortal",
-        "url": "bit.ly/diablo_keymapping",
+        "url": "https://www.bit.ly/diablo_keymapping",
+        "direct_URL": "https://cdn.discordapp.com/attachments/922068254569160745/1001529269517819985/com.blizzard.diablo.immortal.playmap",
         "bundle_identifier": "com.blizzard.diablo.immortal"
     },
     {
         "tag": "wildrift",
         "name": "League of Legends: Wild Rift",
-        "url": "bit.ly/wildrift_keymapping",
+        "url": "https://www.bit.ly/wildrift_keymapping",
+        "direct_URL": "https://cdn.discordapp.com/attachments/922068254569160745/1001529423553634314/com.riotgames.league.wildrift.playmap",
         "bundle_identifier": "com.riotgames.league.wildrift"
     },
     {
         "tag": "grayreven",
         "name": "Punishing: Gray Raven",
-        "url": "bit.ly/grayreven_keymapping",
+        "url": "https://www.bit.ly/grayreven_keymapping",
+        "direct_URL": "https://cdn.discordapp.com/attachments/922068254569160745/994401982162944080/com.kurogame.punishing.grayraven.en.tranthanh_playcover.playmap",
         "bundle_identifier": "com.kurogame.punishing.grayraven.en"
     }
 ]
