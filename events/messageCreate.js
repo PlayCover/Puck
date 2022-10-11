@@ -1,4 +1,4 @@
-var messageList = [];
+var messageList = ['1027589326118330469'];
 
 module.exports = {
 	name: 'messageCreate',
@@ -43,12 +43,16 @@ module.exports = {
         }
 
         if (message.channel.type === 11 && message.channel.parentId === '1019859452352020540') {
-            if (message.channel.messages.cache.first().content.includes(`I have read the documentation and searched for previously created posts about this`)) return;
-
             if (messageList.includes(message.channel.id)) return;
             else messageList.push(message.channel.id);
 
+<<<<<<< HEAD
             await message.reply(`You have created a post without using the required template. This post will autodelete in 30 seconds.`).then(message => { setTimeout(() => message.channel.delete(), 30000); messageList.filter(m => m != message.channel.id) });
+=======
+            if (message.channel.messages.cache.first().content.includes(`I have read the documentation and searched for previously created posts about this`)) return;
+
+            await message.reply(`You have created a post without using the required template. This post will autodelete in 15 seconds.`).then(message => { setTimeout(() => message.channel.delete(), 15000); messageList.filter(m => m != message.channel.id) });
+>>>>>>> 4fb78de (🌸 Fixed post check missing old posts)
         }
 	}   
 };
