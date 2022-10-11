@@ -48,7 +48,7 @@ module.exports = {
             if (messageList.includes(message.channel.id)) return;
             else messageList.push(message.channel.id);
 
-            await message.reply(`You have created a post without using the required template. This post will autodelete in 15 seconds.`).then(message => { setTimeout(() => message.channel.delete(), 15000); messageList.filter(m => m != message.channel.id) });
+            await message.reply(`You have created a post without using the required template. This post will autodelete in 30 seconds.`).then(message => { setTimeout(() => message.channel.delete(), 30000); messageList.filter(m => m != message.channel.id) });
         }
 	}   
 };
