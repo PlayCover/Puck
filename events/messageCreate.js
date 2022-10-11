@@ -1,4 +1,4 @@
-// const { WebhookClient, Collection } = require('discord.js');
+var messageList = [];
 
 module.exports = {
 	name: 'messageCreate',
@@ -41,7 +41,16 @@ module.exports = {
                 message.delete();
             }
         }
-	}
+
+        if (message.channel.type === 11 && message.channel.parentId === '1019859452352020540') {
+            if (message.channel.messages.cache.first().content.includes(`I have read the documentation and searched for previously created posts about this`)) return;
+
+            if (messageList.includes(message.channel.id)) return;
+            else messageList.push(message.channel.id);
+
+            await message.reply(`You have created a post without using the required template. This post will autodelete in 15 seconds.`).then(message => { setTimeout(() => message.channel.delete(), 15000); messageList.filter(m => m != message.channel.id) });
+        }
+	}   
 };
 
 const findOrCreateWebhook = async (message) => {
