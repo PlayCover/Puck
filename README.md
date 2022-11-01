@@ -1,2 +1,2 @@
 # Puck
-an Artificial Spirit
+An Artificial Spirit
