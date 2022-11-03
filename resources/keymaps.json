@@ -6,8 +6,13 @@
     },
     {
         "tag": "honkai",
-        "name": "Honkai Impact 3rd",
-        "url": "bit.ly/honkai_keymapping"
+        "name": "Honkai Impact 3",
+        "url": "bit.ly/honkai3_keymapping"
+    },
+    {
+        "tag": "honkai",
+        "name": "Honkai Impact 3rd (Global)",
+        "url": "bit.ly/honkai3rd_keymapping"
     },
     {
         "tag": "diablo",
