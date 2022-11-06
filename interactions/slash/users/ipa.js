@@ -15,7 +15,7 @@ module.exports = {
             embeds: [
                 new EmbedBuilder()
                     .setTitle('Click here to join Appocalypse server')
-                    .setURL('https://discord.gg/8SXCXbzzBe/')
+                    .setURL('https://discord.gg/8SXCXbzzBe')
                     .setAuthor({ name: 'Appocalypse: Decrypted IPAs'})
                     .setColor('Random')
             ],
