@@ -1,0 +1,87 @@
+[
+    {
+        "tag": "install",
+        "name": "Download & Install PlayCover",
+        "url": "docs.playcover.io/getting_started/download_playcover.html"
+    },
+    {
+        "tag": "installipa",
+        "name": "Download & Install iOS .ipa files",
+        "url": "docs.playcover.io/getting_started/download_ipa.html"
+    },
+    {
+        "tag": "login",
+        "name": "Troubleshoot App Login Issues",
+        "url": "docs.playcover.io/getting_started/troubleshoot_login.html"
+    },
+    {
+        "tag": "migrate",
+        "name": "Migrating",
+        "url": "docs.playcover.io/getting_started/migrating.html"
+    },
+    {
+        "tag": "xclt",
+        "name": "Alternate Xcode Command Line Tools Installation Methods",
+        "url": "docs.playcover.io/getting_started/alt_xcode_cli_install.html"
+    },
+    {
+        "tag": "umkeymap",
+        "name": "Using & Making Keymaps",
+        "url": "docs.playcover.io/keymapping/using_making_keymaps.html"
+    },
+    {
+        "tag": "iekeymap",
+        "name": "Importing & Exporting Keymaps",
+        "url": "docs.playcover.io/keymapping/import_export_keymaps.html"
+    },
+    {
+        "tag": "ckeymap",
+        "name": "Common Issues",
+        "url": "docs.playcover.io/keymapping/common_issues.html"
+    },
+    {
+        "tag": "skeymap",
+        "name": "Keymapping",
+        "url": "docs.playcover.io/keymapping/common_issues.html"
+    },
+    {
+        "tag": "sgraphics",
+        "name": "Graphics",
+        "url": "docs.playcover.io/settings/graphics.html"
+    },
+    {
+        "tag": "sjbbypass",
+        "name": "Jailbreak Bypass",
+        "url": "docs.playcover.io/settings/jailbreak_bypass.html"
+    },
+    {
+        "tag": "miscs",
+        "name": "Miscellaneous",
+        "url": "docs.playcover.io/settings/miscellaneous.html"
+    },
+    {
+        "tag": "build",
+        "name": "Why Build from Source?",
+        "url": "docs.playcover.io/building_from_source/why_build.html"
+    },
+    {
+        "tag": "prerequisites",
+        "name": "Install Prerequisites",
+        "url": "docs.playcover.io/building_from_source/install_prerequisites.html"
+    },
+    {
+        "tag": "building",
+        "name": "Building",
+        "url": "docs.playcover.io/building_from_source/building.html"
+    },
+    {
+        "tag": "fork",
+        "name": "Forking & Making PRs",
+        "url": "docs.playcover.io/contributing/forking_making_pr.html"
+    },
+    {
+        "tag": "conduct",
+        "name": "Code of Conduct",
+        "url": "docs.playcover.io/contributing/code_of_conduct.html"
+    }
+]
