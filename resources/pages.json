@@ -35,7 +35,7 @@
         "url": "docs.playcover.io/keymapping/import_export_keymaps.html"
     },
     {
-        "tag": "ckeymap",
+        "tag": "cikeymap",
         "name": "Common Issues",
         "url": "docs.playcover.io/keymapping/common_issues.html"
     },
@@ -55,7 +55,7 @@
         "url": "docs.playcover.io/settings/jailbreak_bypass.html"
     },
     {
-        "tag": "miscs",
+        "tag": "smiscs",
         "name": "Miscellaneous",
         "url": "docs.playcover.io/settings/miscellaneous.html"
     },
