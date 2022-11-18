@@ -21,6 +21,8 @@ module.exports = {
                     new EmbedBuilder()
                     .setTitle(`Latest PlayCover Nightly Build`)
                     .setDescription(`[Click here to go to download page](https://nightly.link/PlayCover/PlayCover/workflows/2.nightly_release/develop)`)
+                    .setAuthor({ name: 'Nightly.link'})
+                    .setThumbnail(interaction.guild.iconURL())
                 ],
                 ephemeral: user ? false : true
             }).catch(error => console.error(`[ERROR]: ${error}`));
