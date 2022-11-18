@@ -6,8 +6,7 @@ module.exports = {
 		.setDescription('Get the download link for PlayCover')
         .addStringOption(option =>
             option.setName('nightly')
-                .setDescription('Get the Nightly build download link')
-                .setAutocomplete(true))
+                .setDescription('Get the Nightly build download link'))
         .addUserOption(option => option.setName('user').setDescription('User to ping in reply')),
 
 	async execute(interaction) {
