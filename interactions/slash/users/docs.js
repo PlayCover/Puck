@@ -22,6 +22,8 @@ module.exports = {
                     new EmbedBuilder()
                     .setTitle(`${specified}`)
                     .setDescription(`[Click here to open this page on PlayBook](https://${require('../../../resources/pages.json').find(page => page.name == specified).url})`)
+                    .setAuthor({ name: 'PlayCover Documentation'})
+                    .setThumbnail(interaction.guild.iconURL())
                 ],
                 ephemeral: user ? false : true
             }).catch(error => console.error(`[ERROR]: ${error}`));

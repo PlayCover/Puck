@@ -6,8 +6,7 @@ module.exports = {
 		.setDescription('Get the download link for PlayCover')
         .addStringOption(option =>
             option.setName('nightly')
-                .setDescription('Get the Nightly build download link')
-                .setAutocomplete(true))
+                .setDescription('Get the Nightly build download link'))
         .addUserOption(option => option.setName('user').setDescription('User to ping in reply')),
 
 	async execute(interaction) {
@@ -22,6 +21,8 @@ module.exports = {
                     new EmbedBuilder()
                     .setTitle(`Latest PlayCover Nightly Build`)
                     .setDescription(`[Click here to go to download page](https://nightly.link/PlayCover/PlayCover/workflows/2.nightly_release/develop)`)
+                    .setAuthor({ name: 'Nightly.link'})
+                    .setThumbnail(interaction.guild.iconURL())
                 ],
                 ephemeral: user ? false : true
             }).catch(error => console.error(`[ERROR]: ${error}`));
