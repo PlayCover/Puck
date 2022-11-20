@@ -1,31 +1,25 @@
 [
     {
-        "tag": "genshin",
         "name": "Genshin Impact",
         "url": "bit.ly/genshin_keymapping"
     },
     {
-        "tag": "honkai",
         "name": "Honkai Impact 3",
         "url": "bit.ly/honkai3_keymapping"
     },
     {
-        "tag": "honkai",
         "name": "Honkai Impact 3rd (Global)",
         "url": "bit.ly/honkai3rd_keymapping"
     },
     {
-        "tag": "diablo",
         "name": "Diablo Immortal",
         "url": "bit.ly/diablo_keymapping"
     },
     {
-        "tag": "wildrift",
         "name": "League of Legends: Wild Rift",
         "url": "bit.ly/wildrift_keymapping"
     },
     {
-        "tag": "grayreven",
         "name": "Punishing: Gray Raven",
         "url": "bit.ly/grayreven_keymapping"
     }
