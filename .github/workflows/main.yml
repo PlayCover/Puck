@@ -36,7 +36,6 @@ jobs:
                     echo -e 'TOKEN=${{ secrets.TOKEN }}\nGUILD=${{ secrets.GUILD }}\nClient=${{ secrets.CLIENT }}' >> .env
                     rm -rf node_modules package-lock.json
                     npm install
-                    pm2 update
                     pm2 delete Puck
                     pm2 start puck.js --name Puck
                     pm2 save
