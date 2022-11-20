@@ -19,7 +19,7 @@ jobs:
                 PORT: ${{ secrets.PORT }}
                 KEY: ${{ secrets.KEY }}
                 source: "*"
-                target: "/home/ubuntu/Clandestine"
+                target: "/home/ubuntu/Puck"
                 rm: true
                 
           - name: Deploy App
