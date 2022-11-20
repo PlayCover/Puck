@@ -3,7 +3,7 @@ const { EmbedBuilder, SlashCommandBuilder } = require('discord.js');
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('textinput')
-		.setDescription('How to add text into TextBoxes when you cannot type in')
+		.setDescription('How to add text into TextBoxes where you cannot type')
         .addUserOption(option => option.setName('user').setDescription('User to ping in reply')),
 
 	async execute(interaction) {
