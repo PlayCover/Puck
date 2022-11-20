@@ -1,0 +1,41 @@
+name: Deploy
+
+on: [push]
+
+jobs:
+    Deploy:
+        name: Deploy
+        runs-on: ubuntu-latest
+        
+        steps:
+          - name: Checkout
+            uses: actions/checkout@v3
+          
+          - name: Transfer Repository Content
+            uses: appleboy/scp-action@master
+            with:
+                HOST: ${{ secrets.HOST }}
+                USERNAME: ${{ secrets.USER }}
+                PORT: ${{ secrets.PORT }}
+                KEY: ${{ secrets.KEY }}
+                source: "*"
+                target: "/home/ubuntu/Clandestine"
+                rm: true
+                
+          - name: Deploy App
+            uses: appleboy/ssh-action@master
+            with:
+                HOST: ${{ secrets.HOST }}
+                USERNAME: ${{ secrets.USER }}
+                PORT: ${{ secrets.PORT }}
+                KEY: ${{ secrets.KEY }}
+                script: |
+                    cd /home/ubuntu/Puck
+                    rm .env.example LICENSE README.md
+                    rm -rf .git*
+                    echo -e 'TOKEN=${{ secrets.TOKEN }}\nGUILD=${{ secrets.GUILD }}\nClient=${{ secrets.CLIENT }}' >> .env
+                    rm -rf node_modules package-lock.json
+                    npm install
+                    pm2 update
+                    pm2 kill
+                    pm2 start puck.js --name Puck
