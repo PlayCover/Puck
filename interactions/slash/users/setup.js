@@ -15,7 +15,7 @@ module.exports = {
             embeds: [
                 new EmbedBuilder()
                     .setAuthor({ name: `Requested by: ${interaction.member.nickname}`, iconURL: interaction.user.avatarURL() })
-                    .setTitle('How to install Xcode Command Line Tools')
+                    .setTitle('How to setup Genshin Impact in PlayCover')
                     .setDescription(`   
                         **1. Disable SIP**
                         ➤ This can be done by shutting down your mac, holding down power button
