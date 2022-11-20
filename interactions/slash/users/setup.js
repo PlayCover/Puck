@@ -32,7 +32,7 @@ module.exports = {
                         ➤ *Command + Space*; type "Terminal" in the search box
                         ➤ It should open a normal terminal window
                         ➤ Type the following in this window (or copy paste it)
-                        \`\`\`sudo nvram boot-args="amfi_get_out_of_my_way=1"\`\`\`
+                        \`\`\`sudo nvram boot-args="amfi_get_out_of_my_way=0x1 ipc_control_port_options=0"\`\`\`
                         ➤ If it appears that nothing has happened, this is correct.
                         ➤ **Now restart your Mac once again**
                         **3. Login to Genshin**
