@@ -5,14 +5,14 @@ const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
 
 const client = new Client({
-	intents: [
-		GatewayIntentBits.Guilds,
+    intents: [
+        GatewayIntentBits.Guilds,
         GatewayIntentBits.GuildMembers,
-		GatewayIntentBits.GuildMessages,
+        GatewayIntentBits.GuildMessages,
         GatewayIntentBits.GuildMessageReactions,
-		GatewayIntentBits.GuildPresences,
+        GatewayIntentBits.GuildPresences,
         GatewayIntentBits.MessageContent,
-	]
+    ]
 });
 
 
@@ -31,7 +31,7 @@ try {
         if (event.once) {
             client.once(event.name, (...args) => event.execute(...args, client));
         } else {
-            client.on( event.name, async (...args) => await event.execute(...args, client));
+            client.on(event.name, async (...args) => await event.execute(...args, client));
         }
     }
     console.log('[CLIENT] All Events Loaded.');
@@ -48,7 +48,7 @@ try {
             client.slashCommands.set(command.data.name, command);
         }
     }
-    console.log('[CLIENT] All Slash Commands Loaded.'); 
+    console.log('[CLIENT] All Slash Commands Loaded.');
 } catch (error) { console.log(`[ERROR] Failed to Load Slash Commands: ${error.toString().substring(7)}`) }
 
 try {
@@ -110,10 +110,10 @@ try {
 const rest = new REST({ version: '9' }).setToken(process.env.TOKEN);
 
 (async () => {
-	try {
-		await rest.put(Routes.applicationGuildCommands(process.env.CLIENT, process.env.GUILD), { body: [...Array.from(client.slashCommands.values()).map((c) => c.data.toJSON())] });
-		console.log('[CLIENT] All Slash Commands Registered.');
-	} catch (error) { console.log(`[ERROR] Registering Slash Commands: ${error.toString().substring(7)}`) }
+    try {
+        await rest.put(Routes.applicationGuildCommands(process.env.CLIENT, process.env.GUILD), { body: [...Array.from(client.slashCommands.values()).map((c) => c.data.toJSON())] });
+        console.log('[CLIENT] All Slash Commands Registered.');
+    } catch (error) { console.log(`[ERROR] Registering Slash Commands: ${error.toString().substring(7)}`) }
 })();
 
 client.login(process.env.TOKEN);
