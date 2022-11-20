@@ -37,5 +37,5 @@ jobs:
                     rm -rf node_modules package-lock.json
                     npm install
                     pm2 update
-                    pm2 kill
+                    pm2 delete Puck
                     pm2 start puck.js --name Puck
