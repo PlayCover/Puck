@@ -2,8 +2,8 @@ const { EmbedBuilder, SlashCommandBuilder } = require('discord.js');
 
 module.exports = {
 	data: new SlashCommandBuilder()
-		.setName('clt')
-		.setDescription('How to install Xcode Command Line Tools')
+		.setName('codesign')
+		.setDescription('How to fix "PlayCover" cannot be opened')
         .addUserOption(option => option.setName('user').setDescription('User to ping in reply')),
 
 	async execute(interaction) {
@@ -15,15 +15,14 @@ module.exports = {
             embeds: [
                 new EmbedBuilder()
                     .setAuthor({ name: `Requested by: ${interaction.member.nickname}`, iconURL: interaction.user.avatarURL() })
-                    .setTitle('How to install Xcode Command Line Tools')
+                    .setTitle('How to fix "PlayCover" cannot be opened')
                     .setDescription(`   
                         ➤ **Command + Space** on your keyboard
                         ➤ Type **Terminal**
                         ➤ Type or copy+paste the following command:
-                        \`\`\`xcode-select --install\`\`\`
-                        ➤ Input your password
-                        ➤ Press \`install\` and agree to the terms and conditions
-                        ➤ The install time you will see is very misleading, it should take from 10 to 60 minutes depending on your internet connection.  
+                        \`\`\`codesign --force --deep --sign - /Applications/PlayCover.app\`\`\`
+                        ➤ Make sure the only output is:
+                        \`\`\`/Applications/PlayCover.app: replacing existing signature\`\`\`
                         ➤ **Enjoy!**
                         ➤ *If you are having issues or just want to ask questions, you can always go to <#1019859452352020540> for help!*  
                     `)

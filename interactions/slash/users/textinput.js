@@ -2,8 +2,8 @@ const { EmbedBuilder, SlashCommandBuilder } = require('discord.js');
 
 module.exports = {
 	data: new SlashCommandBuilder()
-		.setName('clt')
-		.setDescription('How to install Xcode Command Line Tools')
+		.setName('textinput')
+		.setDescription('How to add text into TextBoxes when you cannot type in')
         .addUserOption(option => option.setName('user').setDescription('User to ping in reply')),
 
 	async execute(interaction) {
@@ -15,16 +15,15 @@ module.exports = {
             embeds: [
                 new EmbedBuilder()
                     .setAuthor({ name: `Requested by: ${interaction.member.nickname}`, iconURL: interaction.user.avatarURL() })
-                    .setTitle('How to install Xcode Command Line Tools')
+                    .setTitle('How to add text into TextBoxes')
                     .setDescription(`   
-                        ➤ **Command + Space** on your keyboard
-                        ➤ Type **Terminal**
-                        ➤ Type or copy+paste the following command:
-                        \`\`\`xcode-select --install\`\`\`
-                        ➤ Input your password
-                        ➤ Press \`install\` and agree to the terms and conditions
-                        ➤ The install time you will see is very misleading, it should take from 10 to 60 minutes depending on your internet connection.  
-                        ➤ **Enjoy!**
+                        ➤ Open any app that has a textfield where you can copy.
+                        ➤ Type the text you would like in the text box.
+                        ➤ Select your text and copy it by pressing **Command** on your keyboard and **C** at the same time.
+                        ➤ Open the app with issues again.
+                        ➤ Click on the text box where you would like the text to be entered.
+                        ➤ Press **Command + V** on your keyboard at the same time to paste the text.
+                        ➤ **You're done!**
                         ➤ *If you are having issues or just want to ask questions, you can always go to <#1019859452352020540> for help!*  
                     `)
                     .setColor('Random')

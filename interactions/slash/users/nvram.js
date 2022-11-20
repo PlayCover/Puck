@@ -25,6 +25,7 @@ module.exports = {
                         ➤ If it seems like nothing happened, **that's expected** and correct
                         ➤ Restart your mac
                         ➤ **Enjoy!**
+                        ➤ *If you are having issues or just want to ask questions, you can always go to <#1019859452352020540> for help!*  
                     `)
                     .setColor('Random')
             ],
