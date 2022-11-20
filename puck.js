@@ -21,7 +21,6 @@ client.buttonCommands = new Collection();
 client.selectCommands = new Collection();
 client.modalCommands = new Collection();
 client.autocompleteInteractions = new Collection();
-client.messageList = new Collection();
 
 try {
     const eventFiles = fs.readdirSync('./events').filter((file) => file.endsWith('.js'));
