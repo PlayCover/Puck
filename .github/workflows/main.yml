@@ -39,3 +39,4 @@ jobs:
                     pm2 update
                     pm2 delete Puck
                     pm2 start puck.js --name Puck
+                    pm2 save
