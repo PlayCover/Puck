@@ -1,70 +1,114 @@
 [
     {
-        "name": "Download & Install PlayCover",
+        "name": "Getting Started - Download & Install PlayCover",
         "url": "docs.playcover.io/getting_started/download_playcover.html"
     },
     {
-        "name": "Download & Install iOS .ipa files",
+        "name": "Getting Started - Download & Install iOS .ipa files",
         "url": "docs.playcover.io/getting_started/download_ipa.html"
     },
     {
-        "name": "Troubleshoot App Login Issues",
+        "name": "Getting Started - Troubleshoot App Login Issues",
         "url": "docs.playcover.io/getting_started/troubleshoot_login.html"
     },
     {
-        "name": "Migrating",
+        "name": "Getting Started - Migrating from an Older Version",
         "url": "docs.playcover.io/getting_started/migrating.html"
     },
     {
-        "name": "Alternate Xcode Command Line Tools Installation Methods",
+        "name": "Getting Started - Alternate Xcode Command Line Tools Installation Methods",
         "url": "docs.playcover.io/getting_started/alt_xcode_cli_install.html"
     },
     {
-        "name": "Using & Making Keymaps",
+        "name": "Keymapping - Using & Making Keymaps",
         "url": "docs.playcover.io/keymapping/using_making_keymaps.html"
     },
     {
-        "name": "Importing & Exporting Keymaps",
+        "name": "Keymapping - Importing & Exporting Keymaps",
         "url": "docs.playcover.io/keymapping/import_export_keymaps.html"
     },
     {
-        "name": "Common Issues",
+        "name": "Keymapping - Common Issues",
         "url": "docs.playcover.io/keymapping/common_issues.html"
     },
     {
-        "name": "Keymapping",
-        "url": "docs.playcover.io/keymapping/common_issues.html"
+        "name": "Settings - Keymapping",
+        "url": "docs.playcover.io/settings/keymapping.html"
     },
     {
-        "name": "Graphics",
+        "name": "Settings - Graphics",
         "url": "docs.playcover.io/settings/graphics.html"
     },
     {
-        "name": "Jailbreak Bypass",
+        "name": "Settings - Jailbreak Bypass",
         "url": "docs.playcover.io/settings/jailbreak_bypass.html"
     },
     {
-        "name": "Miscellaneous",
+        "name": "Settings - Miscellaneous",
         "url": "docs.playcover.io/settings/miscellaneous.html"
     },
     {
-        "name": "Why Build from Source?",
+        "name": "Other Features - Sideloadly Export",
+        "url": "docs.playcover.io/other_features/sideloadly_export.html"
+    },
+    {
+        "name": "Other Features - Account Manager",
+        "url": "docs.playcover.io/other_features/account_manager.html"
+    },
+    {
+        "name": "Other Features - PlayCover Settings",
+        "url": "docs.playcover.io/other_features/playcover_settings.html"
+    },
+    {
+        "name": "Other Features - IPA Library",
+        "url": "docs.playcover.io/other_features/ipa_library.html"
+    },
+    {
+        "name": "Miscellaneous - Blocked Apps",
+        "url": "docs.playcover.io/miscellaneous/blocked_apps.html"
+    },
+    {
+        "name": "Miscellaneous - Configuring Entitlements for Jailbreak Bypass",
+        "url": "docs.playcover.io/miscellaneous/entitlements.html"
+    },
+    {
+        "name": "Miscellaneous - In-app Purchases",
+        "url": "docs.playcover.io/miscellaneous/app_purchases.html"
+    },
+    {
+        "name": "Miscellaneous - Photo Storage",
+        "url": "docs.playcover.io/miscellaneous/photo_storage.html"
+    },
+    {
+        "name": "Miscellaneous - Related Projects and Utilities",
+        "url": "docs.playcover.io/miscellaneous/projects_utilities.html"
+    },
+    {
+        "name": "Miscellaneous - Running Apps with Xcode",
+        "url": "docs.playcover.io/miscellaneous/run_with_xcode.html"
+    },
+    {
+        "name": "Miscellaneous - Issues after an Xcode Update",
+        "url": "docs.playcover.io/miscellaneous/xcode_update_error.html"
+    },
+    {
+        "name": "Buildiing from Source - Why Build from Source?",
         "url": "docs.playcover.io/building_from_source/why_build.html"
     },
     {
-        "name": "Install Prerequisites",
+        "name": "Buildiing from Source - Install Prerequisites",
         "url": "docs.playcover.io/building_from_source/install_prerequisites.html"
     },
     {
-        "name": "Building",
+        "name": "Buildiing from Source - Building",
         "url": "docs.playcover.io/building_from_source/building.html"
     },
     {
-        "name": "Forking & Making PRs",
+        "name": "Contributing - Forking & Making PRs",
         "url": "docs.playcover.io/contributing/forking_making_pr.html"
     },
     {
-        "name": "Code of Conduct",
+        "name": "Contributing - Code of Conduct",
         "url": "docs.playcover.io/contributing/code_of_conduct.html"
     }
 ]
