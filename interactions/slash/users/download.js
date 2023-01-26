@@ -30,7 +30,7 @@ module.exports = {
                 break;
             case 'nightly':
                 title = 'Nightly';
-                description = `[Click here to download](https://nightly.link/playcover/playcover/workflows/2.nightly_release/develop?status=completed)`;
+                description = `[Click here to download](https://nightly.link/playcover/playcover/workflows/2.nightly_release/develop)`;
                 thumbnail = 'attachment://nightly.png';
                 file = nightly;
                 break;
