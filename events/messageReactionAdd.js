@@ -24,9 +24,16 @@ module.exports = {
 							.addFields({ name: 'Source', value: `[Jump to message](${reaction.message.url})` })
 							.setTimestamp()
 							.setColor('Random')
-					],
-					files: reaction.message.attachments?.map(a => (a.contentType.includes('image') ? null : a.url))
+					]
 				});
+
+				reaction.message.attachments?.map(a =>
+					a.contentType.includes('image')
+						? null
+						: channel.send({
+								files: reaction.message.attachments?.map(a => (a.contentType.includes('image') ? null : a.url))
+						  })
+				);
 			});
 		}
 	}
