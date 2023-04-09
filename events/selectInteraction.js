@@ -1,7 +1,7 @@
 module.exports = {
 	name: 'interactionCreate',
 	async execute(interaction) {
-		if (!interaction.isSelectMenu()) return;
+		if (!interaction.isStringSelectMenu()) return;
 		const command = interaction.client.selectCommands.get(interaction.customId);
 
 		if (!command) await require('../../messages/defaultSelectError').execute(interaction);
