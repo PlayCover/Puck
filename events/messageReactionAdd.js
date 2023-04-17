@@ -26,14 +26,6 @@ module.exports = {
 							.setColor('Random')
 					]
 				});
-
-				reaction.message.attachments?.map(a =>
-					a.contentType.includes('image')
-						? null
-						: channel.send({
-								files: reaction.message.attachments?.map(a => (a.contentType.includes('image') ? null : a.url))
-						  })
-				);
 			});
 		}
 	}
