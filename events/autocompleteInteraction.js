@@ -5,7 +5,7 @@ module.exports = {
 	async execute(interaction) {
 		if (interaction.type != InteractionType.ApplicationCommandAutocomplete) return;
 
-		const request = interaction.client.autocompleteInteractions.get(interaction.commandName);   
+		const request = interaction.client.autocompleteInteractions.get(interaction.commandName);
 		if (!request) return;
 
 		try {

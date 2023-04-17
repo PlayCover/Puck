@@ -1,28 +1,21 @@
 const { EmbedBuilder, SlashCommandBuilder } = require('discord.js');
 
 module.exports = {
-    data: new SlashCommandBuilder()
-        .setName('keymap')
-        .setDescription('Information about the keymapping system')
-        .addStringOption(option =>
-            option.setName('keymap')
-                .setDescription('Premade keymaps')
-                .setAutocomplete(true))
-        .addUserOption(option => option.setName('user').setDescription('User to ping in reply')),
+	data: new SlashCommandBuilder()
+		.setName('keymap')
+		.setDescription('Information about the keymapping system')
+		.addStringOption(option => option.setName('keymap').setDescription('Premade keymaps').setAutocomplete(true))
+		.addUserOption(option => option.setName('user').setDescription('User to ping in reply')),
 
-    async execute(interaction) {
-        let game = interaction.options.getString('keymap');
-        let user = interaction.options.getUser('user');
-        let embed = new EmbedBuilder();
+	async execute(interaction) {
+		let game = interaction.options.getString('keymap');
+		let user = interaction.options.getUser('user');
+		let embed = new EmbedBuilder();
 
-        if (game) {
-            embed
-                .setTitle(`${game} Keymap`)
-                .setDescription(`[Download Here](https://${require('../../../resources/keymaps.json').find(keymap => keymap.name == game).url})`)
-        } else {
-            embed
-                .setTitle('Keymapping FAQ')
-                .setDescription(`
+		if (game) {
+			embed.setTitle(`${game} Keymap`).setDescription(`[Download Here](https://${require('../../../resources/keymaps.json').find(keymap => keymap.name == game).url})`);
+		} else {
+			embed.setTitle('Keymapping FAQ').setDescription(`
                 ➤ \`Command (CMD) + K\` — Toggle keymapping mode
 
                 **Button Events:**
@@ -40,14 +33,16 @@ module.exports = {
                 ➤ \`Command (CMD) + '↓'\` — Decrease the selected buttons size
                 ➤ \`Command (CMD) + Delete (Backspace)\` — Delete the selected keymapping
                 ➤ \`Press option (⌥)\` — Toggle between show/hide cursor
-            `)
-        }
+            `);
+		}
 
-        return interaction.reply({
-            content: user ? `${user.toString()}, ${interaction.member.toString()} wanted you to see this command` : null,
-            allowedMentions: { users: [user ? user.id : null] },
-            embeds: [embed],
-            ephemeral: user ? false : true
-        }).catch(error => console.error(`[ERROR]: ${error}`));
-    }
+		return interaction
+			.reply({
+				content: user ? `${user.toString()}, ${interaction.member.toString()} wanted you to see this command` : null,
+				allowedMentions: { users: [user ? user.id : null] },
+				embeds: [embed],
+				ephemeral: user ? false : true
+			})
+			.catch(error => console.error(`[ERROR]: ${error}`));
+	}
 };

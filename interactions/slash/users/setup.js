@@ -1,22 +1,24 @@
 const { EmbedBuilder, SlashCommandBuilder } = require('discord.js');
 
 module.exports = {
-    data: new SlashCommandBuilder()
-        .setName('setup')
-        .setDescription('How to setup Genshin Impact in PlayCover')
-        .addUserOption(option => option.setName('user').setDescription('User to ping in reply')),
+	data: new SlashCommandBuilder()
+		.setName('setup')
+		.setDescription('How to setup Genshin Impact in PlayCover')
+		.addUserOption(option => option.setName('user').setDescription('User to ping in reply')),
 
-    async execute(interaction) {
-        let user = interaction.options.getUser('user');
+	async execute(interaction) {
+		let user = interaction.options.getUser('user');
 
-        return interaction.reply({
-            content: user ? `${user.toString()}, ${interaction.member.toString()} wanted you to see this command` : null,
-            allowedMentions: { users: [user ? user.id : null] },
-            embeds: [
-                new EmbedBuilder()
-                    .setAuthor({ name: `Requested by: ${interaction.member.nickname}`, iconURL: interaction.user.avatarURL() })
-                    .setTitle('How to setup Genshin Impact in PlayCover')
-                    .setDescription(`   
+		return interaction
+			.reply({
+				content: user ? `${user.toString()}, ${interaction.member.toString()} wanted you to see this command` : null,
+				allowedMentions: { users: [user ? user.id : null] },
+				embeds: [
+					new EmbedBuilder()
+						.setAuthor({ name: `Requested by: ${interaction.member.nickname}`, iconURL: interaction.user.avatarURL() })
+						.setTitle('How to setup Genshin Impact in PlayCover')
+						.setDescription(
+							`   
                         **1. Disable SIP**
                         ➤ This can be done by shutting down your mac, holding down power button
                         ➤ After this, click on your username/ssd, then keep going until you can see \`Utilities\` at the top
@@ -51,10 +53,12 @@ module.exports = {
                         **5. Open Genshin**
                         ➤ You're done! Enjoy playing genshin!
                         ➤ *If you are having issues or just want to ask questions, you can always go to <#1019859452352020540> for help!*  
-                    `)
-                    .setColor('Random')
-            ],
-            ephemeral: user ? false : true
-        }).catch(error => console.error(`[ERROR]: ${error}`));
-    }
+                    `
+						)
+						.setColor('Random')
+				],
+				ephemeral: user ? false : true
+			})
+			.catch(error => console.error(`[ERROR]: ${error}`));
+	}
 };

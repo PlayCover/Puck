@@ -11,9 +11,9 @@ module.exports = {
 		} catch (err) {
 			console.error(err);
 			await interaction.reply({
-                content: 'There was an issue while executing that command!', 
-                ephemeral: true
-            });
+				content: 'There was an issue while executing that command!',
+				ephemeral: true
+			});
 		}
 	}
 };
