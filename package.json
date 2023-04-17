@@ -25,7 +25,7 @@
     "license": "GPL-3.0",
     "dependencies": {
         "@discordjs/rest": "^1.7.0",
-        "discord-api-types": "^0.37.37",
+        "discord-api-types": "^0.37.39",
         "discord.js": "^14.9.0",
         "dotenv": "^16.0.3"
     },
