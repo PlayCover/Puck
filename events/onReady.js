@@ -24,8 +24,6 @@ function status(client) {
 			{ type: ActivityType.Watching, data: 'people not read FAQ' },
 			{ type: ActivityType.Watching, data: 'devs push back releases' },
 			{ type: ActivityType.Playing, data: 'PlayCover' },
-			{ type: ActivityType.Playing, data: 'with roeegh' },
-			{ type: ActivityType.Playing, data: 'with depression' }
 		];
 		let rand = key[Math.floor(Math.random() * key.length)];
 

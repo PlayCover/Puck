@@ -18,9 +18,8 @@
         "Puck"
     ],
     "author": {
-        "name": "Roeegh",
-        "url": "https://github.com/roeegh",
-        "email": "admin@roeegh.dev"
+        "name": "PlayCover",
+        "url": "https://github.com/PlayCover",
     },
     "license": "GPL-3.0",
     "dependencies": {
